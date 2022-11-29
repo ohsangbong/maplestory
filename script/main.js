@@ -22,29 +22,29 @@ window.monsters_attr = new MonstersAttr().getMonstersAttr();
 
 window.percent = new Percent();
 
-function $(id) {
+function getID(id) {
 	return document.getElementById(id);
 }
 
 window.onload = function() {
 	
-	$("start_btn").onclick = function() {
+	getID("start_btn").onclick = function() {
 		window.switchUI("select");
 	}
 
-	$("help_btn").onclick = function() {
+	getID("help_btn").onclick = function() {
 		window.switchUI("help");
 	}
 
-	$("left_img").onclick = function() {
+	getID("left_img").onclick = function() {
 		start("male");
 	}
 
-	$("right_img").onclick = function() {
+	getID("right_img").onclick = function() {
 		start("female");
 	}
 	
-	var canvas = $("canvas");
+	var canvas = getID("canvas");
 	var ctx = canvas.getContext("2d");
 		ctx.textAlign = "center";
 		ctx.textBaseLine = "top";
@@ -54,7 +54,7 @@ window.onload = function() {
 	this.thread = setInterval(function() {
 		if (window.resource.curr_amount == window.resource.total_amount) {
 			clearInterval(thread);
-			$("home_audio").play();
+			// getID("home_audio").play();
 			
 			version.style.display = "block";
 			help_btn.style.display = "block";
@@ -70,7 +70,7 @@ window.onload = function() {
 }
 
 window.switchUI = function(e_id) {
-	var e = $(e_id);
+	var e = getID(e_id);
 	if (e.style.display == "none" || e.style.display == "") {
 		e.style.display = "block";
 	} else {
@@ -79,8 +79,8 @@ window.switchUI = function(e_id) {
 }
 
 window.start = function(gender) {
-	document.body.removeChild($("home"));
-	document.body.removeChild($("home_audio"));
+	document.body.removeChild(getID("home"));
+	// document.body.removeChild(getID("home_audio"));
 
 	if (gender == "male") {
 		window.PLAYER_OFFSET_Y = 0;
@@ -90,7 +90,7 @@ window.start = function(gender) {
 		window.resource.player = window.resource.female_player;
 	}
 
-	var ctx = $("canvas").getContext("2d");
+	var ctx = getID("canvas").getContext("2d");
 		ctx.drawRightImage = function(img, x, y) {
 			ctx.save();
 			ctx.translate(x + img.width / 2, y + img.height / 2);
@@ -144,6 +144,7 @@ window.start = function(gender) {
 		}
 		game_scene.update();
 	}, 1000 / window.FPS, false);
+	
 
 	function getGameData(next_map) {
 		var map_basic_data = new MapData(next_map);

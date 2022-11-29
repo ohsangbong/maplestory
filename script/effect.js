@@ -381,9 +381,9 @@ function ThingsFactory() {
 
 	this.getRes = function(name) {
 		switch(name) {
-			case "蓝色蜗牛壳":
+			case "파란 달팽이 껍질":
 				return window.resource.things["lansewoniuke"];
-			case "蘑菇芽孢":
+			case "버섯 포자":
 				return window.resource.things["moguyabao"];
 			case "绿液球":
 				return window.resource.things["lvyeqiu"];
@@ -418,13 +418,13 @@ function ThingsFactory() {
 			case "蛇皮":
 				return window.resource.things["shepi"];
 
-			case "红色药水":
+			case "빨간 포션":
 				return window.resource.things["hong50"];
 			case "橙色药水":
 				return window.resource.things["hong150"];
 			case "白色药水":
 				return window.resource.things["hong300"];
-			case "蓝色药水":
+			case "파란 포션":
 				return window.resource.things["lan100"];
 			case "活力神水":
 				return window.resource.things["huolishenshui"];
@@ -433,7 +433,7 @@ function ThingsFactory() {
 				return window.resource.things["qingmeng"];
 			case "黑唐衫":
 				return window.resource.things["heitangshan"];
-			case "刮胡刀":
+			case "도루코 대거":
 				return window.resource.things["guahudao"];
 			case "凤凰刃":
 				return window.resource.things["fenghuangren"];
@@ -610,29 +610,29 @@ function TipsFactory() {
 	this.base_dy = 15;
 
 	this.createExpTip = function(exp) {
-		return new Tip("得到经验(+" + exp + ")", 6);
+		return new Tip("경험치 획득(+" + exp + ")", 6);
 	}
 
 	this.createThingTip = function(tip_data) {
 		switch(tip_data.type) {
 			case 0:
-				return new Tip("得到金币(+" + tip_data.money + ")", 0);
+				return new Tip("메소 획득(+" + tip_data.money + ")", 0);
 			case 1:
-				return new Tip("得到装备(" + tip_data.name +")", 1);
+				return new Tip("장비 획득(" + tip_data.name +")", 1);
 			case 2:
 				var tip = "";
 				if (tip_data.amount > 1) {
-					tip = "得到" + tip_data.name + "(+" + tip_data.amount + "个)";
+					tip =  tip_data.name + "(+" + tip_data.amount + "개)" + " 획득";
 				} else {
-					tip = "得到" + tip_data.name;
+					tip = tip_data.name + " 획득";
 				}
 				return new Tip(tip, 2);
 			case 3: 
 				var tip = "";
 				if (tip_data.amount > 1) {
-					tip = "得到" + tip_data.name + "(+" + tip_data.amount + "个)";
+					tip = tip_data.name + "(+" + tip_data.amount + "개)" + " 획득";
 				} else {
-					tip = "得到" + tip_data.name;
+					tip = tip_data.name + " 획득";
 				}
 				return new Tip(tip, 3);
 		}

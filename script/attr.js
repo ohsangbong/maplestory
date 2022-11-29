@@ -174,10 +174,10 @@ function MonstersAttr() {
 		things: []
 	}
 	this.lanWoNiu.things["金币"] = {type: 0, min: 3, max: 8, percent: 0.8};
-	this.lanWoNiu.things["蓝色蜗牛壳"] = {type: 3, min: 1, max: 1, percent: 0.7};
-	this.lanWoNiu.things["红色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.lanWoNiu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.lanWoNiu.things["刮胡刀"] = {type: 1, percent: 0.1};
+	this.lanWoNiu.things["파란 달팽이 껍질"] = {type: 3, min: 1, max: 1, percent: 0.7};
+	this.lanWoNiu.things["빨간 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.lanWoNiu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.lanWoNiu.things["도루코 대거"] = {type: 1, percent: 0.1};
 
 	this.moGuZai = {
 		speed: 3,
@@ -191,10 +191,10 @@ function MonstersAttr() {
 		things: []
 	}
 	this.moGuZai.things["金币"] = {type: 0, min: 5, max: 12, percent: 0.8};
-	this.moGuZai.things["蘑菇芽孢"] = {type: 3, min: 1, max: 1, percent: 0.7};
-	this.moGuZai.things["红色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.moGuZai.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.moGuZai.things["刮胡刀"] = {type: 1, percent: 0.1};
+	this.moGuZai.things["버섯 포자"] = {type: 3, min: 1, max: 1, percent: 0.7};
+	this.moGuZai.things["빨간 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.moGuZai.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.moGuZai.things["도루코 대거"] = {type: 1, percent: 0.1};
 
 	this.jinJiDeCiMoGu = {
 		speed: 5,
@@ -210,7 +210,7 @@ function MonstersAttr() {
 	this.jinJiDeCiMoGu.things["金币"] = {type: 0, min: 30, max: 50, percent: 0.8};
 	this.jinJiDeCiMoGu.things["刺蘑菇盖"] = {type: 3, min: 1, max: 1, percent: 0.7};
 	this.jinJiDeCiMoGu.things["橙色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.jinJiDeCiMoGu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.jinJiDeCiMoGu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.jinJiDeCiMoGu.things["青梦"] = {type: 1, percent: 0.1};
 
 	this.xiaoQingShe = {
@@ -226,7 +226,7 @@ function MonstersAttr() {
 	}
 	this.xiaoQingShe.things["金币"] = {type: 0, min: 40, max: 60, percent: 0.8};
 	this.xiaoQingShe.things["橙色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.xiaoQingShe.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.xiaoQingShe.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.xiaoQingShe.things["蛇皮"] = {type: 3, min: 1, max: 1, percent: 0.8};
 
 	this.gangJiaShiTouRen = {
@@ -261,8 +261,8 @@ function MonstersAttr() {
 	this.lvShuiLingQiu.things["金币"] = {type: 0, min: 20, max: 30, percent: 0.8};
 	this.lvShuiLingQiu.things["绿水灵珠"] = {type: 3, min: 1, max: 1, percent: 0.3};
 	this.lvShuiLingQiu.things["绿液球"] = {type: 3, min: 1, max: 1, percent: 0.8};
-	this.lvShuiLingQiu.things["红色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.lvShuiLingQiu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.lvShuiLingQiu.things["빨간 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.lvShuiLingQiu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.lvShuiLingQiu.things["枫叶刃"] = {type: 1, percent: 0.1};
 
 	this.piaoPiaoZhu = {
@@ -279,7 +279,7 @@ function MonstersAttr() {
 	this.piaoPiaoZhu.things["金币"] = {type: 0, min: 26, max: 34, percent: 0.8};
 	this.piaoPiaoZhu.things["蝴蝶结"] = {type: 3, min: 1, max: 1, percent: 0.8};
 	this.piaoPiaoZhu.things["橙色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.piaoPiaoZhu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.piaoPiaoZhu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.piaoPiaoZhu.things["青梦"] = {type: 1, percent: 0.1};
 
 	this.zhu = {
@@ -295,8 +295,8 @@ function MonstersAttr() {
 	}
 	this.zhu.things["金币"] = {type: 0, min: 26, max: 34, percent: 0.8};
 	this.zhu.things["猪头"] = {type: 3, min: 1, max: 1, percent: 0.8};
-	this.zhu.things["红色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.zhu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.zhu.things["빨간 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.zhu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.zhu.things["青梦"] = {type: 1, percent: 0.1};
 
 	this.huDie = {
@@ -312,7 +312,7 @@ function MonstersAttr() {
 	}
 	this.huDie.things["金币"] = {type: 0, min: 45, max: 65, percent: 0.8};
 	this.huDie.things["橙色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.huDie.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.huDie.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 
 	this.huaMoGu = {
 		speed: 3,
@@ -327,7 +327,7 @@ function MonstersAttr() {
 	}
 	this.huaMoGu.things["金币"] = {type: 0, min: 52, max: 63, percent: 0.8};
 	this.huaMoGu.things["白色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.huaMoGu.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.huaMoGu.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.huaMoGu.things["花蘑菇盖"] = {type: 3, min: 1, max: 1, percent: 0.7};
 	this.huaMoGu.things["黑唐衫"] = {type: 1, percent: 0.1};
 
@@ -346,7 +346,7 @@ function MonstersAttr() {
 	this.chuiDiZiDeMao.things["金币"] = {type: 0, min: 80, max: 98, percent: 0.8};
 	this.chuiDiZiDeMao.things["猫皮"] = {type: 3, min: 1, max: 1, percent: 0.7};
 	this.chuiDiZiDeMao.things["白色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.chuiDiZiDeMao.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.chuiDiZiDeMao.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.chuiDiZiDeMao.things["双翼刃"] = {type: 1, percent: 0.1};
 
 	this.shiTouRen = {
@@ -413,7 +413,7 @@ function MonstersAttr() {
 	this.xingGuangJingLing.things["金币"] = {type: 0, min: 70, max: 90, percent: 0.8};
 	this.xingGuangJingLing.things["白色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.xingGuangJingLing.things["星光精灵的碎块"] = {type: 3, min: 1, max: 1, percent: 0.7};
-	this.xingGuangJingLing.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.xingGuangJingLing.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.xingGuangJingLing.things["枫叶刃"] = {type: 1, percent: 0.1};
 
 	this.yueGuangJingLing = {
@@ -430,7 +430,7 @@ function MonstersAttr() {
 	this.yueGuangJingLing.things["金币"] = {type: 0, min: 90, max: 110, percent: 0.8};
 	this.yueGuangJingLing.things["月光精灵的碎块"] = {type: 3, min: 1, max: 1, percent: 0.7};
 	this.yueGuangJingLing.things["白色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
-	this.yueGuangJingLing.things["蓝色药水"] = {type: 2, min: 1, max: 3, percent: 0.3};
+	this.yueGuangJingLing.things["파란 포션"] = {type: 2, min: 1, max: 3, percent: 0.3};
 	this.yueGuangJingLing.things["双翼刃"] = {type: 1, percent: 0.1};
 
 	this.riGuangJingLing = {

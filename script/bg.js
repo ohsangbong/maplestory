@@ -16,7 +16,7 @@ function UI() {
 	this.y = window.HEIGHT - 62;
 	this.res = window.resource.ui["main_bar"][0];
 
-	this.tip = {color: "white", tip: "[作者]欢迎光临冒险岛世界！"};
+	this.tip = {color: "white", tip: "[참고]모험의 세계에 오신 것을 환영합니다！"};
 
 	this.createTip = function(type, tip) {
 		var color;
@@ -35,37 +35,37 @@ function UI() {
 		var num = parseInt(Math.random() * 5000);
 		switch(num) {
 			case 0:
-				this.tip = this.createTip(0, "[帮助]在光柱处按方向键上，可以切换地图。");
+				this.tip = this.createTip(0, "[도움말]방향키로 맵을 이동할 수 있습니다.");
 				break;
 			case 1:
-				this.tip = this.createTip(0, "[帮助]背包满后，可以丢弃物品。");
+				this.tip = this.createTip(0, "[도움말]배낭이 가득 차면 소지품을 버려야 합니다.");
 				break;
 			case 2:
-				this.tip = this.createTip(0, "[帮助]在空中按方向键上可以爬绳子和梯子.");
+				this.tip = this.createTip(0, "[도움말]점프+방향키로 밧줄과 사다리를 오를 수 있습니다.");
 				break;
 			case 3:
-				this.tip = this.createTip(1, "[作者]本游戏仅供测试。");
+				this.tip = this.createTip(1, "[참고]본 게임은 테스트 전용입니다.");
 				break;
 			case 4:
-				this.tip = this.createTip(1, "[作者]QQ1439080086。");
+				this.tip = this.createTip(1, "[참고]본 게임은 테스트 전용입니다.");
 				break;
 			case 5:
-				this.tip = this.createTip(0, "[帮助]杀死怪物后，有一定概率获取装备，装备可以提升角色属性。")
+				this.tip = this.createTip(0, "[도움말]몬스터를 죽이면 확률적으로 장비를 얻을 수 있습니다.")
 				break;
 			case 6:
-				this.tip = this.createTip(0, "[帮助]升级后可以获得5个能力点，能力点用于提升角色属性。");
+				this.tip = this.createTip(0, "[도움말]레벨업을 하면 5개의 능력 포인트를 획득할 수 있습니다.");
 				break;
 			case 7:
-				this.tip = this.createTip(0, "[帮助]力量影响攻击力和防御力。");
+				this.tip = this.createTip(0, "[도움말]힘은 공격력과 방어력에 영향을 줍니다.");
 				break;
 			case 8:
-				this.tip = this.createTip(0, "[帮助]敏捷影响攻击力，防御力和魔法防御力。");
+				this.tip = this.createTip(0, "[도움말]민첩성은 공격력, 방어력, 마법 방어력에 영향을 줍니다.");
 				break;
 			case 9:
-				this.tip = this.createTip(0, "[帮助]智力影响魔法防御力。");
+				this.tip = this.createTip(0, "[도움말]지능은 마법 방어력에 영향을 줍니다.");
 				break;
 			case 10:
-				this.tip = this.createTip(0, "[帮助]运气影响攻击力。");
+				this.tip = this.createTip(0, "[도움말]행운은 공격력에 영향을 줍니다.");
 				break;
 		}
 	}
